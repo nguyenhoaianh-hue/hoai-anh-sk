@@ -6,6 +6,7 @@ import { SKKNForm } from './components/SKKNForm';
 import { DocumentPreview } from './components/DocumentPreview';
 import { Button } from './components/Button';
 import { Download, ChevronRight, Wand2, FileText, CheckCircle } from 'lucide-react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 const App: React.FC = () => {
   const [userInfo, setUserInfo] = useState<UserInfo>({
@@ -292,6 +293,7 @@ const App: React.FC = () => {
             </div>
         )}
       </div>
+      <SpeedInsights />
     </div>
   );
 };
